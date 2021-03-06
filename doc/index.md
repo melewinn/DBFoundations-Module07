@@ -11,6 +11,8 @@ SQL UDF Functions allow you to create your own custom functions. You may use UDF
 ## Scalar, Inline, and Multi-Statement Functions
 Scalar Functions return only a single (scalar) value from the table (Figure 1).  Scalar Functions may or not may not have parameters which are optional, but always return a single value which is mandatory. When calling a Scalar Function, you must supply a two-part name (ex. dbo.MultiplyValues). 
 
+![alt text](Figure%201.png "tooltip text")
+
 Figure 1: SQL query with Scalar Function
 
 Inline Functions simply return a select statement and do not require you to specify the structure of the return table. Also, Inline Functions do not use the Begin/End block. In comparison, Multi-Statement Functions require you to declare a table variable that is to be returned and must have a Begin/End block. Within this Begin/End block, there is code that populates the table variable. 
